@@ -31,6 +31,7 @@
 
 #undef EFI_SDC_DEVICE
 #define EFI_SDC_DEVICE SDCD1
+#define RE_SDC_MODE SDC_MODE_1BIT
 
 // Ignore USB VBUS pin (we're never a host, only a device)
 #define BOARD_OTG_NOVBUSSENS TRUE
