@@ -141,9 +141,9 @@ pins:
     class: [switch_inputs, event_inputs]
     ts_name: ACPRESS (PE2)
 
-  - id: [D3, D3]
+  - id: [A5, A5]
     class: [switch_inputs, event_inputs]
-    ts_name: VSS (PD3)
+    ts_name: VSS (PA5)
     
   - id: [E4, E4]
     class: [switch_inputs, event_inputs]
@@ -161,9 +161,9 @@ pins:
     class: [switch_inputs, event_inputs]
     ts_name: D42 (PA8)
 
-  - id: [B9, B9]
+  - id: [D4, D4]
     class: [switch_inputs, event_inputs]
-    ts_name: FLEX (PB9)
+    ts_name: FLEX (PD4)
     
   - id: E3
     class: outputs
