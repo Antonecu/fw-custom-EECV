@@ -4,6 +4,68 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::E8, // IGN1 (PE8)
+	Gpio::E9, // IGN2 (PE9)
+	Gpio::E10, // IGN3  (PE10)
+	Gpio::E11, // IGN4 (PE11)
+	Gpio::D13, // INJ1 (PD13)
+	Gpio::D12, // INJ2 (PD12)
+	Gpio::D11, // INJ3 (PD11)
+	Gpio::D10, // INJ4 (PD10)
+	Gpio::D0, // CAN 1 RX (D0)
+	Gpio::D1, // CAN 1 TX (D1)
+	Gpio::B8, // CAN 2 RX (B8)
+	Gpio::B9, // CAN 2 TX (B9)
+	Gpio::B12, // SPI2 CS (B12)
+	Gpio::B13, // SPI2 SCK (B13)
+	Gpio::B14, // SPI2 MISO (B14)
+	Gpio::B15, // SPI2 MOSI (B15)
+	Gpio::E3, // PUMP (PE3)
+	Gpio::E6, // FAN (PE6)
+	Gpio::C13, // TACHO (PC13)
+	Gpio::D14, // D7 (PD14)
+	Gpio::D15, // D6 (PD15)
+	Gpio::C6, // IDLE (PC6)
+	Gpio::C7, // D4 (PC7)
+	Gpio::D7, // D46 (PD7)
+	Gpio::D8, // D21 (PD8)
+	Gpio::D9, // D44 (PD9)
+	Gpio::D5, // D14 (PD5)
+	Gpio::D6, // D15 (PD6)
+	Gpio::E12, // PE12
+	Gpio::E13, // PE13
+	Gpio::E14, // PE14
+	Gpio::E15, // PE15
+// "IGN1 (PE8)",
+// "IGN2 (PE9)",
+// "IGN3  (PE10)",
+// "IGN4 (PE11)",
+// "INJ1 (PD13)",
+// "INJ2 (PD12)",
+// "INJ3 (PD11)",
+// "INJ4 (PD10)",
+// "CAN 1 RX (D0)",
+// "CAN 1 TX (D1)",
+// "CAN 2 RX (B8)",
+// "CAN 2 TX (B9)",
+// "SPI2 CS (B12)",
+// "SPI2 SCK (B13)",
+// "SPI2 MISO (B14)",
+// "SPI2 MOSI (B15)",
+// "PUMP (PE3)",
+// "FAN (PE6)",
+// "TACHO (PC13)",
+// "D7 (PD14)",
+// "D6 (PD15)",
+// "IDLE (PC6)",
+// "D4 (PC7)",
+// "D46 (PD7)",
+// "D21 (PD8)",
+// "D44 (PD9)",
+// "D14 (PD5)",
+// "D15 (PD6)",
+// "PE12",
+// "PE13",
+// "PE14",
+// "PE15",
 }
