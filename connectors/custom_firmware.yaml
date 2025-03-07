@@ -96,22 +96,6 @@ pins:
   - id: D10
     class: outputs
     ts_name: INJ4 (PD10)
-
-  - id: [B10]
-    class: [outputs]
-    ts_name: BARO SCL (PB10)
-
-  - id: [B11]
-    class: [outputs]
-    ts_name: BARO SDA (PB11)
-
-    - id: A9
-    class: outputs
-    ts_name: USART1 TX (A9)
-
-  - id: A10
-    class: outputs
-    ts_name: USART1 RX (A10)
   
   - id: D0
     class: outputs
