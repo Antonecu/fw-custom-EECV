@@ -107,6 +107,21 @@ void setBoardDefaultConfiguration() {
         engineConfiguration->boostControlPin = Gpio::Unassigned;
 	engineConfiguration->vvtPins[0] = Gpio::Unassigned;
 	engineConfiguration->vvtPins[1] = Gpio::Unassigned;
+	
+// GPPWM0: PWM CLT Gauge 
+	engineConfiguration->gppwm[0].pin = Gpio::Unassigned;
+	engineConfiguration->gppwm[0].pwmFrequency = 100;
+	engineConfiguration->gppwm[0].loadAxis = GPPWM_Clt;
+	engineConfiguration->gppwm[0].onAboveDuty = 60;
+	engineConfiguration->gppwm[0].offBelowDuty = 40;
+	strcpy(engineConfiguration->gpPwmNote[0], "CLTGauge");
+	copyArray(engineConfiguration->gppwm[0].rpmBins, { 0, 1000, 2000, 2500, 3500, 5500, 6500, 7000 });
+	for (size_t i = 0; i < efi::size(engineConfiguration->gppwm[0].table); i++)
+	{
+		// Set the 3500 and 5500 rpm columns to 100
+		engineConfiguration->gppwm[0].table[i][4] = 100;
+		engineConfiguration->gppwm[0].table[i][5] = 100;
+	}
 
 //Idle configuration
 	engineConfiguration->useStepperIdle = false;
