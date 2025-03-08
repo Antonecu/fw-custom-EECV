@@ -113,7 +113,6 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->isDoubleSolenoidIdle = false;
 	engineConfiguration->idle.solenoidPin = Gpio::C6;
 	engineConfiguration->idle.solenoidFrequency = 500;
-	engineConfiguration->manIdlePosition = 39;
 	engineConfiguration->secondSolenoidPin = Gpio::Unassigned;
 	
 //CAN 1 bus overwrites
