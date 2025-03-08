@@ -79,11 +79,14 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->ignitionMode = IM_WASTED_SPARK;
 	engineConfiguration->crankingInjectionMode = IM_SIMULTANEOUS;
 	engineConfiguration->injectionMode = IM_SEQUENTIAL;
-	engineConfiguration->globalTriggerAngleOffset = 0;
+	engineConfiguration->trigger.type = trigger_type_e::TT_TOOTHED_WHEEL_36_1;
+	engineConfiguration->globalTriggerAngleOffset = -85;
 	engineConfiguration->displacement = 1.596;
 	engineConfiguration->injector.flow = 165;
         engineConfiguration->cranking.baseFuel = 25;
 	engineConfiguration->cranking.rpm = 400;
+	engineConfiguration->crankingTimingAngle = 13;
+	engineConfiguration->rpmHardLimit = 6800;
 	
 //Digital Input
 	engineConfiguration->acSwitch = Gpio::E7;
@@ -95,6 +98,8 @@ void setBoardDefaultConfiguration() {
 //Low Side Outputs 
 	engineConfiguration->fuelPumpPin = Gpio::E3;
 	engineConfiguration->fanPin = Gpio::E6;
+	engineConfiguration->fanOffTemperature = 95;
+	engineConfiguration->fanOnTemperature = 99;
 	engineConfiguration->fan2Pin = Gpio::D15;
 	engineConfiguration->tachOutputPin = Gpio::C13;
 	engineConfiguration->mainRelayPin = Gpio::Unassigned;
@@ -107,6 +112,8 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->useStepperIdle = false;
 	engineConfiguration->isDoubleSolenoidIdle = false;
 	engineConfiguration->idle.solenoidPin = Gpio::C6;
+	engineConfiguration->idle.solenoidFrequency = 500;
+	engineConfiguration->manIdlePosition = 39;
 	engineConfiguration->secondSolenoidPin = Gpio::Unassigned;
 	
 //CAN 1 bus overwrites
