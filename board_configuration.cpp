@@ -83,7 +83,6 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->globalTriggerAngleOffset = -85;
 	engineConfiguration->displacement = 1.596;
 	engineConfiguration->cylinderBore = 79;
-	engineConfiguration->vehicleWeight = 1.035;
 	engineConfiguration->compressionRatio = 11.0;
 	engineConfiguration->injector.flow = 165;
         engineConfiguration->cranking.baseFuel = 25;
@@ -91,9 +90,25 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->crankingTimingAngle = 13;
 	engineConfiguration->rpmHardLimit = 6800;
 
+// Vehicle speed/gears
+	engineConfiguration->totalGearsCount = 5;
+	engineConfiguration->gearRatio[0] = 3.154;
+	engineConfiguration->gearRatio[1] = 1.926;
+	engineConfiguration->gearRatio[2] = 1.281;
+	engineConfiguration->gearRatio[3] = 0.951;
+	engineConfiguration->gearRatio[4] = 0.756;
+
 	engineConfiguration->driveWheelRevPerKm = 552;
 	engineConfiguration->finalGearRatio = 3.62;
 	engineConfiguration->tachPulsePerRev = 2;
+
+// Set up closed loop fuel
+	engineConfiguration->fuelClosedLoopCorrectionEnabled = true;
+	engineConfiguration->stft.minAfr = 10;
+	engineConfiguration->stft.cellCfgs[0] = { 5, -5, 5 };
+	engineConfiguration->stft.cellCfgs[1] = { 15, -15, 10 };
+	engineConfiguration->stft.cellCfgs[2] = { 15, -15, 1 };
+	engineConfiguration->stft.cellCfgs[3] = { 5, -5, 30 };
 	
 //Digital Input
 	engineConfiguration->acSwitch = Gpio::E7;
@@ -104,19 +119,20 @@ void setBoardDefaultConfiguration() {
 	
 //Low Side Outputs 
 	engineConfiguration->fuelPumpPin = Gpio::E3;
-	engineConfiguration->fanPin = Gpio::E6;
-	engineConfiguration->fanOffTemperature = 95;
-	engineConfiguration->fanOnTemperature = 99;
-	engineConfiguration->fan2Pin = Gpio::D15;
 	engineConfiguration->tachOutputPin = Gpio::C13;
 	engineConfiguration->mainRelayPin = Gpio::Unassigned;
-	engineConfiguration->acRelayPin = Gpio::Unassigned;
-        engineConfiguration->boostControlPin = Gpio::Unassigned;
-	engineConfiguration->vvtPins[0] = Gpio::Unassigned;
-	engineConfiguration->vvtPins[1] = Gpio::Unassigned;
+	engineConfiguration->acRelayPin = Gpio::D14;
+	engineConfiguration->fanPin = Gpio::E6;
+	engineConfiguration->fan2Pin = Gpio::D15;
+	engineConfiguration->fanOffTemperature = 96;
+	engineConfiguration->fanOnTemperature = 100;
+	engineConfiguration->fan2OnTemperature = 106;
+	engineConfiguration->fan2OffTemperature = 101;
+	engineConfiguration->enableFan1WithAc = true;
+	engineConfiguration->enableFan2WithAc = true;
 	
 // GPPWM0: PWM CLT Gauge 
-	engineConfiguration->gppwm[0].pin = Gpio::Unassigned;
+	engineConfiguration->gppwm[0].pin = Gpio::D7;
 	engineConfiguration->gppwm[0].pwmFrequency = 100;
 	engineConfiguration->gppwm[0].loadAxis = GPPWM_Clt;
 	engineConfiguration->gppwm[0].onAboveDuty = 60;
