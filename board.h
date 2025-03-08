@@ -31,7 +31,10 @@
 
 #undef EFI_SDC_DEVICE
 #define EFI_SDC_DEVICE SDCD1
-#define RE_SDC_MODE SDC_MODE_1BIT
+
+#define STM32_SPI_USE_SPI1                  FALSE
+#define STM32_SPI_USE_SPI2                  TRUE
+#define STM32_I2C_USE_I2C2                  TRUE
 
 // Ignore USB VBUS pin (we're never a host, only a device)
 #define BOARD_OTG_NOVBUSSENS TRUE
