@@ -139,7 +139,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->gppwm[0].offBelowDuty = 20;
 	strcpy(engineConfiguration->gpPwmNote[0], "CLTGauge");
 	copyArray(engineConfiguration->gppwm[0].rpmBins, { 0, 1000, 2000, 2500, 3500, 5500, 6500, 7000 });	
-	copyArray(engineConfiguration->gppwm[0].cltBins, { 0, 20, 40, 60, 80, 90, 100, 110 });
+	copyArray(engineConfiguration->gppwm[0].loadBins, { 0, 20, 40, 60, 80, 90, 100, 110 });
 
 //Idle configuration
 	engineConfiguration->useStepperIdle = false;
