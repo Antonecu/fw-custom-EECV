@@ -28,10 +28,7 @@ static void setIgnitionPins() {
 
 static void setSensorPins() {
 	engineConfiguration->clt.adcChannel = EFI_ADC_10;
-	engineConfiguration->iat.adcChannel = EFI_ADC_7;
-	engineConfiguration->clt.config = {-10, 60, 120, 160310, 7700, 1180, 2700};
-	engineConfiguration->iat.config = {-10, 60, 120, 160310, 7700, 1180, 2700};
-	
+	engineConfiguration->iat.adcChannel = EFI_ADC_7;	
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_11;
 	engineConfiguration->afr.hwChannel = EFI_ADC_2;
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_12;
@@ -45,8 +42,6 @@ static void setSensorPins() {
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::A5;
 	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
 	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
-//	engineConfiguration->baroSensor.type = MT_MPXH6400;
-//    	engineConfiguration->baroSensor.hwChannel = EFI_ADC_8;
 }
 
 static void setupVbatt() {
@@ -71,6 +66,11 @@ void setBoardDefaultConfiguration() {
 	
 	engineConfiguration->clt.config.bias_resistor = 2490;
 	engineConfiguration->iat.config.bias_resistor = 2490;
+	engineConfiguration->clt.config = {-10, 60, 120, 160310, 7700, 1180, 2700};
+	engineConfiguration->iat.config = {-10, 60, 120, 160310, 7700, 1180, 2700};
+
+	engineConfiguration->tpsMin = 100;
+	engineConfiguration->tpsMax = 750;
 
 	engineConfiguration->enableSoftwareKnock = true;
 	engineConfiguration->cylindersCount = 4;
