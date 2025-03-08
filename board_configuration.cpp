@@ -82,11 +82,18 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->trigger.type = trigger_type_e::TT_TOOTHED_WHEEL_36_1;
 	engineConfiguration->globalTriggerAngleOffset = -85;
 	engineConfiguration->displacement = 1.596;
+	engineConfiguration->cylinderBore = 79;
+	engineConfiguration->vehicleWeight = 1035;
+	engineConfiguration->compressionRatio = 11.0;
 	engineConfiguration->injector.flow = 165;
         engineConfiguration->cranking.baseFuel = 25;
 	engineConfiguration->cranking.rpm = 400;
 	engineConfiguration->crankingTimingAngle = 13;
 	engineConfiguration->rpmHardLimit = 6800;
+
+	engineConfiguration->driveWheelRevPerKm = 552;
+	engineConfiguration->finalGearRatio = 3.62;
+	engineConfiguration->tachPulsePerRev = 2;
 	
 //Digital Input
 	engineConfiguration->acSwitch = Gpio::E7;
@@ -148,4 +155,8 @@ void setBoardDefaultConfiguration() {
 
 //SD card is located on SDIO interface
 	engineConfiguration->isSdCardEnabled = true;
+
+// Disable ETBs
+	engineConfiguration->etbFunctions[0] = dc_function_e::DC_None;
+	engineConfiguration->etbFunctions[1] = dc_function_e::DC_None;
 }
