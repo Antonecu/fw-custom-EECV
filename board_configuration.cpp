@@ -83,7 +83,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->globalTriggerAngleOffset = -85;
 	engineConfiguration->displacement = 1.596;
 	engineConfiguration->cylinderBore = 79;
-	engineConfiguration->vehicleWeight = 1035;
+	engineConfiguration->vehicleWeight = 1.035;
 	engineConfiguration->compressionRatio = 11.0;
 	engineConfiguration->injector.flow = 165;
         engineConfiguration->cranking.baseFuel = 25;
