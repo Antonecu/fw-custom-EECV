@@ -349,11 +349,6 @@
 					   PIN_ODR_LOW(5) |  \
 					   PIN_ODR_LOW(6) |  \
 					   PIN_ODR_LOW(7) |  \
-					   PIN_ODR_LOW(8) |  \
-					   PIN_ODR_LOW(9) |  \
-					   PIN_ODR_LOW(10) | \
-					   PIN_ODR_LOW(11) | \
-					   PIN_ODR_LOW(12) | \
 					   PIN_ODR_LOW(13) | \
 					   PIN_ODR_LOW(14) | \
 					   PIN_ODR_LOW(15))
@@ -445,7 +440,6 @@
 						 PIN_PUPDR_PULLDOWN(15))
 #define VAL_GPIOD_ODR (PIN_ODR_LOW(0) |  \
 					   PIN_ODR_LOW(1) |  \
-					   PIN_ODR_LOW(2) |  \
 					   PIN_ODR_LOW(3) |  \
 					   PIN_ODR_LOW(4) |  \
 					   PIN_ODR_LOW(5) |  \
