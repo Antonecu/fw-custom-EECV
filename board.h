@@ -333,11 +333,11 @@
 						 PIN_PUPDR_PULLDOWN(5) |  \
 						 PIN_PUPDR_PULLDOWN(6) |  \
 						 PIN_PUPDR_PULLDOWN(7) |  \
-						 PIN_PUPDR_FLOATING(8) |  \
-						 PIN_PUPDR_FLOATING(9) |  \
-						 PIN_PUPDR_FLOATING(10) | \
-						 PIN_PUPDR_FLOATING(11) | \
-						 PIN_PUPDR_FLOATING(12) | \
+						 PIN_PUPDR_PULLUP(8) |  \
+						 PIN_PUPDR_PULLUP(9) |  \
+						 PIN_PUPDR_PULLUP(10) | \
+						 PIN_PUPDR_PULLUP(11) | \
+						 PIN_PUPDR_PULLUP(12) | \
 						 PIN_PUPDR_PULLDOWN(13) | \
 						 PIN_PUPDR_PULLDOWN(14) | \
 						 PIN_PUPDR_PULLDOWN(15))
@@ -429,7 +429,7 @@
 						   PIN_OSPEED_HIGH(15))
 #define VAL_GPIOD_PUPDR (PIN_PUPDR_PULLDOWN(0) |  \
 						 PIN_PUPDR_PULLDOWN(1) |  \
-						 PIN_PUPDR_PULLDOWN(2) |  \
+						 PIN_PUPDR_PULLUP(2) |  \
 						 PIN_PUPDR_PULLDOWN(3) |  \
 						 PIN_PUPDR_PULLDOWN(4) |  \
 						 PIN_PUPDR_PULLDOWN(5) |  \
