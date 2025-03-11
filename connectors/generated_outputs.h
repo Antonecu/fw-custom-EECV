@@ -14,8 +14,6 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::D10, // INJ4 (PD10)
 	Gpio::D0, // CAN 1 RX (D0)
 	Gpio::D1, // CAN 1 TX (D1)
-	Gpio::B8, // CAN 2 RX (B8)
-	Gpio::B9, // CAN 2 TX (B9)
 	Gpio::B12, // SPI2 CS (B12)
 	Gpio::B13, // SPI2 SCK (B13)
 	Gpio::B14, // SPI2 MISO (B14)
@@ -23,15 +21,19 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::E3, // PUMP (PE3)
 	Gpio::E6, // FAN (PE6)
 	Gpio::C13, // TACHO (PC13)
-	Gpio::D14, // D7 (PD14)
-	Gpio::D15, // D6 (PD15)
+	Gpio::D14, // AC RELAY (PD14)
+	Gpio::D15, // FAN2 (PD15)
 	Gpio::C6, // IDLE (PC6)
-	Gpio::C7, // D4 (PC7)
-	Gpio::D7, // D46 (PD7)
-	Gpio::D8, // D21 (PD8)
-	Gpio::D9, // D44 (PD9)
-	Gpio::D5, // D14 (PD5)
-	Gpio::D6, // D15 (PD6)
+	Gpio::C7, // O2 HEATER (PC7)
+	Gpio::D8, // CHECK (PD8)
+	Gpio::D9, // LED (PD9)
+	Gpio::D7, // CLT GAUGE (PD7)
+	Gpio::D5, // TX3 (PD5)
+	Gpio::D6, // RX3 (PD6)
+	Gpio::B6, // PB6
+	Gpio::B7, // PB7
+	Gpio::B8, // PB8
+	Gpio::B9, // PB9
 	Gpio::E12, // PE12
 	Gpio::E13, // PE13
 	Gpio::E14, // PE14
@@ -46,8 +48,6 @@ Gpio GENERATED_OUTPUTS = {
 // "INJ4 (PD10)",
 // "CAN 1 RX (D0)",
 // "CAN 1 TX (D1)",
-// "CAN 2 RX (B8)",
-// "CAN 2 TX (B9)",
 // "SPI2 CS (B12)",
 // "SPI2 SCK (B13)",
 // "SPI2 MISO (B14)",
@@ -55,15 +55,19 @@ Gpio GENERATED_OUTPUTS = {
 // "PUMP (PE3)",
 // "FAN (PE6)",
 // "TACHO (PC13)",
-// "D7 (PD14)",
-// "D6 (PD15)",
+// "AC RELAY (PD14)",
+// "FAN2 (PD15)",
 // "IDLE (PC6)",
-// "D4 (PC7)",
-// "D46 (PD7)",
-// "D21 (PD8)",
-// "D44 (PD9)",
-// "D14 (PD5)",
-// "D15 (PD6)",
+// "O2 HEATER (PC7)",
+// "CHECK (PD8)",
+// "LED (PD9)",
+// "CLT GAUGE (PD7)",
+// "TX3 (PD5)",
+// "RX3 (PD6)",
+// "PB6",
+// "PB7",
+// "PB8",
+// "PB9",
 // "PE12",
 // "PE13",
 // "PE14",
