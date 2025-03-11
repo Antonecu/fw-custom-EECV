@@ -137,8 +137,8 @@ pins:
     class: [switch_inputs, event_inputs]
     ts_name: CMP (PE1)
 
-  - id: [E2, E2]
-    class: [switch_inputs, event_inputs]
+  - id: [E2, E2, E2]
+    class: [analog_inputs, switch_inputs, event_inputs]
     ts_name: ACPRESS (PE2)
 
   - id: [A5, A5]
