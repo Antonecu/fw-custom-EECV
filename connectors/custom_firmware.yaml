@@ -59,7 +59,7 @@ pins:
     
   - id: EFI_ADC_14
     class: analog_inputs
-    ts_name: A14 (PC4)
+    ts_name: OILTEMP (PC4)
 
   - id: EFI_ADC_15
     class: analog_inputs
@@ -104,14 +104,6 @@ pins:
   - id: D1
     class: outputs
     ts_name: CAN 1 TX (D1)
-    
-  - id: B8
-    class: outputs
-    ts_name: CAN 2 RX (B8)
-    
-  - id: B9
-    class: outputs
-    ts_name: CAN 2 TX (B9)
 
   - id: B12
     class: outputs
@@ -137,8 +129,8 @@ pins:
     class: [switch_inputs, event_inputs]
     ts_name: CMP (PE1)
 
-  - id: [E2, E2, E2]
-    class: [analog_inputs, switch_inputs, event_inputs]
+  - id: [E2, E2]
+    class: [switch_inputs, event_inputs]
     ts_name: ACPRESS (PE2)
 
   - id: [A5, A5]
@@ -156,10 +148,6 @@ pins:
   - id: [E7, E7]
     class: [switch_inputs, event_inputs]
     ts_name: ACSW (PE7)
-
-  - id: [A8, A8]
-    class: [switch_inputs, event_inputs]
-    ts_name: D42 (PA8)
 
   - id: [D4, D4]
     class: [switch_inputs, event_inputs]
@@ -179,11 +167,11 @@ pins:
 
   - id: D14
     class: outputs
-    ts_name: D7 (PD14)
+    ts_name: AC RELAY (PD14)
 
   - id: D15
     class: outputs
-    ts_name: D6 (PD15)
+    ts_name: FAN2 (PD15)
 
   - id: C6
     class: outputs
@@ -191,27 +179,47 @@ pins:
     
   - id: C7
     class: outputs
-    ts_name: D4 (PC7)
-
-  - id: D7
-    class: outputs
-    ts_name: D46 (PD7)
+    ts_name: O2 HEATER (PC7)
 
   - id: D8
     class: outputs
-    ts_name: D21 (PD8)
+    ts_name: CHECK (PD8)
+
+  - id: [A8, A8]
+    class: [switch_inputs, event_inputs]
+    ts_name: VESW (PA8)
     
   - id: D9
     class: outputs
-    ts_name: D44 (PD9)
+    ts_name: LED (PD9)
+
+  - id: D7
+    class: outputs
+    ts_name: CLT GAUGE (PD7)
     
   - id: [D5, D5, D5]
     class: [outputs, switch_inputs, event_inputs]
-    ts_name: D14 (PD5)
+    ts_name: TX3 (PD5)
 
   - id: [D6, D6, D6]
     class: [outputs, switch_inputs, event_inputs]
-    ts_name: D15 (PD6)
+    ts_name: RX3 (PD6)
+
+  - id: B6
+    class: outputs
+    ts_name: PB6
+    
+  - id: B7
+    class: outputs
+    ts_name: PB7
+
+  - id: B8
+    class: outputs
+    ts_name: PB8
+    
+  - id: B9
+    class: outputs
+    ts_name: PB9
     
   - id: [E12, E12, E12]
     class: [outputs, switch_inputs, event_inputs]
