@@ -54,8 +54,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",9="A15 (PB0)",8="CLT (PA7)",5="FUELPRESS (PA4)",11="IAT (PC0)",4="KNOCK (PA3)",10="MAF (PB1)",16="MAF2 (PC5)",13="MAP (PC2)",3="O2 (PA2)",7="OILPRESS (PA6)",15="OILTEMP (PC4)",1="PA0",2="PA1",6="PA5",12="TPS (PC1)",14="VBAT (PC3)"
-#define adc_channel_e_fullenum "NONE","PA0","PA1","O2 (PA2)","KNOCK (PA3)","FUELPRESS (PA4)","PA5","OILPRESS (PA6)","CLT (PA7)","A15 (PB0)","MAF (PB1)","IAT (PC0)","TPS (PC1)","MAP (PC2)","VBAT (PC3)","OILTEMP (PC4)","MAF2 (PC5)"
+#define adc_channel_e_enum 0="NONE",9="A15 (PB0)",11="CLT (PC0)",5="FUELPRESS (PA4)",8="IAT (PA7)",4="KNOCK (PA3)",10="MAF (PB1)",16="MAF2 (PC5)",13="MAP (PC2)",3="O2 (PA2)",7="OILPRESS (PA6)",15="OILTEMP (PC4)",1="PA0",2="PA1",6="PA5",12="TPS (PC1)",14="VBAT (PC3)"
+#define adc_channel_e_fullenum "NONE","PA0","PA1","O2 (PA2)","KNOCK (PA3)","FUELPRESS (PA4)","PA5","OILPRESS (PA6)","IAT (PA7)","A15 (PB0)","MAF (PB1)","CLT (PC0)","TPS (PC1)","MAP (PC2)","VBAT (PC3)","OILTEMP (PC4)","MAF2 (PC5)"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1384,7 +1384,7 @@
 #define show_tcu_gauges false
 #define show_test_presets true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1554878808
+#define SIGNATURE_HASH 922511324
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1880,7 +1880,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.03.16.EECV.1554878808"
+#define TS_SIGNATURE "rusEFI main.2025.03.16.EECV.922511324"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
