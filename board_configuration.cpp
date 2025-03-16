@@ -27,8 +27,8 @@ static void setIgnitionPins() {
 }
 
 static void setSensorPins() {
-	engineConfiguration->clt.adcChannel = EFI_ADC_7;
-	engineConfiguration->iat.adcChannel = EFI_ADC_10;	
+	engineConfiguration->clt.adcChannel = EFI_ADC_10;
+	engineConfiguration->iat.adcChannel = EFI_ADC_7;	
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_11;
 	engineConfiguration->afr.hwChannel = EFI_ADC_2;
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_12;
@@ -66,8 +66,8 @@ void setBoardDefaultConfiguration() {
 	
 	//engineConfiguration->clt.config.bias_resistor = 2490;
 	//engineConfiguration->iat.config.bias_resistor = 2490;
-	engineConfiguration->clt.config = {0, 50, 98, 94000, 11000, 2370, 2490};
-	engineConfiguration->iat.config = {0, 50, 98, 94000, 11000, 2370, 2490};
+	//engineConfiguration->clt.config = {0, 50, 98, 94000, 11000, 2370, 2490};
+	//engineConfiguration->iat.config = {0, 50, 98, 94000, 11000, 2370, 2490};
 
 	engineConfiguration->tpsMin = 26;
 	engineConfiguration->tpsMax = 230;
