@@ -31,7 +31,7 @@ pins:
 
   - id: EFI_ADC_7
     class: analog_inputs
-    ts_name: IAT (PA7)
+    ts_name: CLT (PA7)
     
   - id: EFI_ADC_8
     class: analog_inputs
@@ -43,7 +43,7 @@ pins:
 
   - id: EFI_ADC_10
     class: analog_inputs
-    ts_name: CLT (PC0)
+    ts_name: IAT (PC0)
     
   - id: EFI_ADC_11
     class: analog_inputs
