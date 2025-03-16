@@ -49,7 +49,7 @@ static void setupVbatt() {
 	engineConfiguration->analogInputDividerCoefficient = 1.55f;
 	
 	// 6.34k high side/ 1k low side
-	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1; 
+	//engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1; 
 
 	// Battery sense on PC3
 	engineConfiguration->vbattAdcChannel = EFI_ADC_13;
@@ -64,8 +64,8 @@ void setBoardDefaultConfiguration() {
 	setSensorPins();
 	setupVbatt();
 	
-	engineConfiguration->clt.config.bias_resistor = 2490;
-	engineConfiguration->iat.config.bias_resistor = 2490;
+	//engineConfiguration->clt.config.bias_resistor = 2490;
+	//engineConfiguration->iat.config.bias_resistor = 2490;
 	engineConfiguration->clt.config = {0, 50, 98, 94000, 11000, 2370, 2490};
 	engineConfiguration->iat.config = {0, 50, 98, 94000, 11000, 2370, 2490};
 
