@@ -27,8 +27,8 @@ static void setIgnitionPins() {
 }
 
 static void setSensorPins() {
-	engineConfiguration->clt.adcChannel = EFI_ADC_10;
-	engineConfiguration->iat.adcChannel = EFI_ADC_7;	
+	engineConfiguration->clt.adcChannel = EFI_ADC_7;
+	engineConfiguration->iat.adcChannel = EFI_ADC_10;	
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_11;
 	engineConfiguration->afr.hwChannel = EFI_ADC_2;
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_12;
