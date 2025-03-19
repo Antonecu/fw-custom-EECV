@@ -66,8 +66,8 @@ void setBoardDefaultConfiguration() {
 	
 	//engineConfiguration->clt.config.bias_resistor = 2490;
 	//engineConfiguration->iat.config.bias_resistor = 2490;
-	//engineConfiguration->clt.config = {0, 50, 98, 94000, 11000, 2370, 2490};
-	//engineConfiguration->iat.config = {0, 50, 98, 94000, 11000, 2370, 2490};
+	engineConfiguration->clt.config = {0, 50, 98, 94000, 11000, 2370, 2490};
+	engineConfiguration->iat.config = {0, 50, 98, 94000, 11000, 2370, 2490};
 
 	engineConfiguration->tpsMin = 26;
 	engineConfiguration->tpsMax = 230;
@@ -80,7 +80,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->crankingInjectionMode = IM_SIMULTANEOUS;
 	engineConfiguration->injectionMode = IM_SEQUENTIAL;
 	engineConfiguration->trigger.type = trigger_type_e::TT_TOOTHED_WHEEL_36_1;
-	engineConfiguration->globalTriggerAngleOffset = -85;
+	engineConfiguration->globalTriggerAngleOffset = -80;
 	engineConfiguration->displacement = 1.596;
 	engineConfiguration->cylinderBore = 79;
 	engineConfiguration->compressionRatio = 11.0;
