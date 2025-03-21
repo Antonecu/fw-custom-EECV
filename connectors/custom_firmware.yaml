@@ -35,11 +35,11 @@ pins:
     
   - id: EFI_ADC_8
     class: analog_inputs
-    ts_name: A15 (PB0)
+    ts_name: MAF (PB0)
 
   - id: EFI_ADC_9
     class: analog_inputs
-    ts_name: MAF (PB1)
+    ts_name: PB1
 
   - id: EFI_ADC_10
     class: analog_inputs
@@ -63,7 +63,7 @@ pins:
 
   - id: EFI_ADC_15
     class: analog_inputs
-    ts_name: MAF2 (PC5)
+    ts_name: PC5
     
   - id: E8
     class: outputs
