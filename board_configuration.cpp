@@ -34,7 +34,6 @@ static void setSensorPins() {
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_12;
         engineConfiguration->map.sensor.type = MT_MPX4250;
 	engineConfiguration->mafAdcChannel = EFI_ADC_8;
-	engineConfiguration->maf2AdcChannel = Gpio::Unassigned;
 	engineConfiguration->triggerInputPins[0] = Gpio::E0;
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
         engineConfiguration->camInputs[0] = Gpio::E1;
