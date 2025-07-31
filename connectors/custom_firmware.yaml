@@ -19,7 +19,7 @@ pins:
 
   - id: EFI_ADC_4
     class: analog_inputs
-    ts_name: FUELPRESS (PA4)
+    ts_name: FUELPRESS (PC2)
 
   - id: EFI_ADC_5
     class: analog_inputs
@@ -51,7 +51,7 @@ pins:
 
   - id: EFI_ADC_12
     class: analog_inputs
-    ts_name: MAP (PC2)
+    ts_name: MAP (PA4)
 
   - id: EFI_ADC_13
     class: analog_inputs
