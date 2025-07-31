@@ -20,10 +20,6 @@ pins:
   - id: EFI_ADC_4
     class: analog_inputs
     ts_name: FUELPRESS (PC2)
-
-  - id: EFI_ADC_5
-    class: analog_inputs
-    ts_name: PA5
     
   - id: EFI_ADC_6
     class: analog_inputs
