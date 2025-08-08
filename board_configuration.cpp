@@ -47,7 +47,7 @@ static void setupVbatt() {
 	// 470 high side/ 910 low side
 	engineConfiguration->analogInputDividerCoefficient = 1.51f;
 	
-	// 6.34k high side/ 1k low side
+	// 39k high side/ 1k low side
 	engineConfiguration->vbattDividerCoeff = 7.43f; 
 
 	// Battery sense on PC3
