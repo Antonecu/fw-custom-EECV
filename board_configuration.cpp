@@ -45,10 +45,10 @@ static void setSensorPins() {
 
 static void setupVbatt() {
 	// 470 high side/ 910 low side
-	engineConfiguration->analogInputDividerCoefficient = 1.55f;
+	engineConfiguration->analogInputDividerCoefficient = 1.51f;
 	
 	// 6.34k high side/ 1k low side
-	//engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1; 
+	engineConfiguration->vbattDividerCoeff =  7.43f; 
 
 	// Battery sense on PC3
 	engineConfiguration->vbattAdcChannel = EFI_ADC_13;
