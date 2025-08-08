@@ -32,11 +32,11 @@ static void setSensorPins() {
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_11;
 	engineConfiguration->afr.hwChannel = EFI_ADC_2;
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_12;
-        engineConfiguration->map.sensor.type = MT_MPX4250;
+    engineConfiguration->map.sensor.type = MT_MPX4250;
 	engineConfiguration->mafAdcChannel = EFI_ADC_8;
 	engineConfiguration->triggerInputPins[0] = Gpio::E0;
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
-        engineConfiguration->camInputs[0] = Gpio::E1;
+    engineConfiguration->camInputs[0] = Gpio::E1;
 	engineConfiguration->camInputs[1] = Gpio::Unassigned;
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::A5;
 	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
@@ -48,7 +48,7 @@ static void setupVbatt() {
 	engineConfiguration->analogInputDividerCoefficient = 1.51f;
 	
 	// 6.34k high side/ 1k low side
-	engineConfiguration->vbattDividerCoeff =  7.43f; 
+	engineConfiguration->vbattDividerCoeff = 7.43f; 
 
 	// Battery sense on PC3
 	engineConfiguration->vbattAdcChannel = EFI_ADC_13;
