@@ -79,15 +79,15 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->crankingInjectionMode = IM_SIMULTANEOUS;
 	engineConfiguration->injectionMode = IM_SEQUENTIAL;
 	engineConfiguration->trigger.type = trigger_type_e::TT_TOOTHED_WHEEL_36_1;
-	engineConfiguration->globalTriggerAngleOffset = -80;
+	engineConfiguration->globalTriggerAngleOffset = -85;
 	engineConfiguration->displacement = 1.596;
 	engineConfiguration->cylinderBore = 79;
 	engineConfiguration->compressionRatio = 11.0;
-	engineConfiguration->injector.flow = 165;
+	engineConfiguration->injector.flow = 130;
         engineConfiguration->cranking.baseFuel = 25;
 	engineConfiguration->cranking.rpm = 400;
 	engineConfiguration->crankingTimingAngle = 13;
-	engineConfiguration->rpmHardLimit = 6800;
+	engineConfiguration->rpmHardLimit = 7500;
 
 // Vehicle speed/gears
 	engineConfiguration->totalGearsCount = 5;
